@@ -1,0 +1,206 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body Styling */
+body {
+    background-image: url(design-black-background-lh6hd1i0ecusnwzg.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 6rem;
+    margin-bottom: -10px;
+}
+
+/* Heading Styling */
+h1, h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Main Content */
+.main {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Container */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Button Styling */
+.buttons button {
+    border: 0.5px solid #000203;
+    background-color: #ecd5d5;
+    color: rgb(26, 24, 24);
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    background: linear-gradient(to right, #ffffff, #8f9194);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 80%; /* Adjusting button width */
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Button Hover Effect */
+.buttons button:hover {
+    /* background-color: #000203; */
+
+    background: linear-gradient(to right, #161616, #000000);
+    color: white;
+    /* border: 0.2px solid #222324; */
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo img {
+        height: 5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .buttons button {
+        width: 90%; /* Increase width for smaller screens */
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 4rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    .buttons button {
+        width: 95%; /* Make buttons full-width */
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Navbar List */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between links */
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+}
+
+/* Navbar Links */
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 12px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    white-space: nowrap; /* Ensures links never break into a new line */
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f0eee6;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 10px; /* Reduce spacing for smaller screens */
+        padding: 0 10px; /* Add some padding to avoid edge crowding */
+    }
+
+    .navbar ul li a {
+        font-size: 0.9rem; /* Slightly reduce font size */
+        padding: 8px 10px;
+    }
+}
