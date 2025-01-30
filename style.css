@@ -76,7 +76,7 @@ h2{
 }
 
 /* Button Styling */
-.buttons button {
+/* .buttons button {
     border: 0.5px solid #000203;
     background-color: #ecd5d5;
     color: rgb(26, 24, 24);
@@ -88,10 +88,10 @@ h2{
     cursor: pointer;
     transition: 0.3s;
     width: 80%; /* Adjusting button width */
-    max-width: 300px;
+    /* max-width: 300px;
     min-width: 200px;
-    text-align: center;
-}
+    text-align: center; */
+/* } */ */
 
 /* Button Hover Effect */
 .buttons button:hover {
@@ -102,6 +102,9 @@ h2{
     /* border: 0.2px solid #222324; */
     
 }
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -205,4 +208,27 @@ h2{
         font-size: 0.9rem; /* Slightly reduce font size */
         padding: 8px 10px;
     }
+}
+
+
+.register-button {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to right, #ffffff, #8f9194);
+    color: rgb(26, 24, 24);
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 80%;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    text-align: center;
+}
+
+.register-button:hover {
+    background: linear-gradient(to right, #161616, #000000);
+    color: white;
 }
